@@ -1,0 +1,46 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "plugins": [],
+  "env": {
+    "browser": false,
+    "node": true,
+    "es6": true,
+    "mocha": false
+  },
+  "rules": {
+    /* for research */
+    "no-console": "off", /* overwrite eslint:recommended" */
+    /* es2015 rules */
+    "arrow-body-style": "error",
+    "arrow-parens": "error",
+    "arrow-spacing": "error",
+    "constructor-super": "error",
+    "generator-star-spacing": ["error", "after"], /* for generators */
+    "no-class-assign": "error",
+    "no-confusing-arrow": "error",
+    "no-const-assign": "error",
+    "no-dupe-class-members": "error",
+    "no-new-symbol": "error",
+    "no-restricted-imports": "error",
+    "no-this-before-super": "error",
+    "no-useless-constructor": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prefer-reflect": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "require-yield": "error", /* for generators */
+    "template-curly-spacing": "error",
+    "yield-star-spacing": ["error", "after"] /* for generators */
+  }
+}
