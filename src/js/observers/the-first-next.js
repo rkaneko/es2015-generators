@@ -1,4 +1,4 @@
-require('../utils/polyfill');
+import '../utils/polyfill';
 import coroutine from '../utils/coroutine';
 
 const wrappedConsumer = coroutine(function* () {
