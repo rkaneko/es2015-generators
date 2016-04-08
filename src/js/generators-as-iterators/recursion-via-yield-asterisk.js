@@ -10,7 +10,7 @@ function* bar() {
   yield 'x';
   yield* foo(); // equals for (const f of foo())
   yield* ['iterable', 'is', 'yieldable', '!'];
-  // yield* はiterableなものであれば評価可能. generatosはiterable
+  // yield* はiterableなものであれば評価可能. generatorsはiterable
   yield 'y';
   return 'recursion via yield*';
 }
