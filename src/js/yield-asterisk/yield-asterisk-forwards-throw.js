@@ -4,6 +4,8 @@ function* callee() {
   try {
     yield 'b';
     yield 'c';
+  } catch (e) {
+    console.log(`[callee] ${e}`);
   } finally {
     console.log('finally callee');
   }
@@ -15,7 +17,7 @@ function* caller() {
     yield* callee();
     yield 'd';
   } catch (e) {
-    console.log(`[caller] + ${e}`);
+    console.log(`[caller] ${e}`);
   }
 }
 

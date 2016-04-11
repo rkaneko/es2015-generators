@@ -25,6 +25,10 @@ function run() {
   
   const result = [...caller()];
   console.dir(`result: ${result}`);
+
+  const callerGen = caller();
+  console.dir(callerGen.next());
+  console.dir(callerGen.return());
 }
 
 (() => {
